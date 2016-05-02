@@ -8,7 +8,8 @@ Meteor.methods({
     Tasks.insert({
       text: text,
       checked: false,
-      private: false
+      private: false,
+      createdAt: new Date()
     });
   },
 
@@ -38,6 +39,6 @@ if (Meteor.isServer) {
         { private: { $ne: true } },
         { owner: this.userId }
       ]
-    });
+    }, {sort: {createdAt: -1}});
   });
 }

@@ -45,8 +45,8 @@ export class TaskList extends MeteorComponent implements OnChanges {
     if (hideCompleted) {
       return Tasks.find({
         checked: false
-      });
+      }, {sort: {createdAt: -1}});
     }
-    return Tasks.find({});
+    return Tasks.find({}, {sort: {createdAt: -1}});
   }
 }
