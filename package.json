@@ -1,5 +1,5 @@
 {
-  "name": "socially-angular2",
+  "name": "simple-todos-angular2",
   "private": true,
   "scripts": {
     "start": "meteor run"
@@ -19,12 +19,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phund/socially-angular2.git"
+    "url": "git+https://github.com/phund/simple-todos-angular2.git"
   },
   "author": "phund",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/phund/socially-angular2/issues"
+    "url": "https://github.com/phund/simple-todos-angular2/issues"
   },
-  "homepage": "https://github.com/phund/socially-angular2#readme"
+  "homepage": "https://github.com/phund/simple-todos-angular2#readme"
 }

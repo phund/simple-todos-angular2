@@ -7,6 +7,6 @@ import {bootstrap} from 'angular2/platform/browser';
   selector: 'app',
   templateUrl: 'client/app.html'
 })
-class Socially { }
+class Todos { }
  
-bootstrap(Socially);
+bootstrap(Todos);
