@@ -1,5 +1,5 @@
 
-import {Component, Input, OnChanges} from 'angular2/core';
+import {Component, NgZone, Input, OnChanges} from 'angular2/core';
 
 import {TaskView} from '../task/task';
 
@@ -19,7 +19,7 @@ export class TaskList extends MeteorComponent implements OnChanges {
   @Input() hideCompleted: boolean = false;
   isLoading: boolean;
 
-  constructor() {
+  constructor(zone: NgZone) {
     super();
     this.isLoading = true;
     this.subscribe('tasks.public', () => {

@@ -1,7 +1,7 @@
 import 'zone.js/dist/zone';
 import 'reflect-metadata';
 
-import {Component, NgZone, provide, enableProdMode} from 'angular2/core';
+import {Component, provide, enableProdMode} from 'angular2/core';
 
 // import {Tasks} from '../imports/api/tasks';
 
