@@ -1,0 +1,21 @@
+<header>
+  <h1>Todo List ({{todoCount}})</h1>
+
+  <label class="hide-completed">
+    <input type="checkbox" [(ngModel)]="hideCompleted"/>
+      Hide Completed Tasks
+  </label>
+
+  <form class="new-task" (submit)="addTask(newTask); newTask = null;">
+    <input [(ngModel)]="newTask" type="text" placeholder="Type to add new tasks" />
+  </form>
+</header>
+
+<div *ngIf="!isLoading">
+  <ul *ngFor="#task of tasks">
+    <task [data]="task"></task>
+  </ul>
+</div>
+<div *ngIf="isLoading" class="loader">
+  <span>loading...</span>
+</div>
